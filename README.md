@@ -2,7 +2,7 @@
 
 ## Tabla de Contenidos
 - [¿Qué es Git y para qué sirve?](#qué-es-git-y-para-qué-sirve)
-  - [Características Principales](#características-principales
+  - [Características Principales](#características-principales)
 - [Comandos Esenciales en Git](#comandos-esenciales-en-git)
   - [Inicializar Git en Nuestro Proyecto](#inicializar-git-en-nuestro-proyecto)
   - [Zona de Trabajo](#zona-de-trabajo)
@@ -11,103 +11,114 @@
 - [Recursos Adicionales](#recursos-adicionales)
 
 # ¿Qué es Git y para qué sirve?
-<p>Git es un sistema de control de versiones distribuido que permite a los desarrolladores rastrear y gestionar cambios en el código fuente a lo largo del tiempo. Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.</p>
+Git es un **sistema de control de versiones distribuido** que permite a los desarrolladores rastrear y gestionar cambios en el código fuente a lo largo del tiempo. Creado por **Linus Torvalds** en 2005 para el desarrollo del kernel de Linux, Git se ha convertido en una herramienta esencial en el desarrollo de software moderno.
 
-## Principales características de Git:
-<ul>
-  <li>Control de versiones: Permite a los desarrolladores guardar distintas versiones de su código, facilitando la comparación y restauración de versiones anteriores.</li>
-  <li>Colaboración: Facilita el trabajo en equipo, permitiendo que múltiples desarrolladores trabajen en el mismo proyecto sin conflictos, mediante el uso de ramas.</li>
-  <li>Distribuido: Cada copia del repositorio contiene toda la historia del proyecto, permitiendo trabajar sin conexión y mejorar la redundancia.</li>
-  <li>Eficiencia: Git está diseñado para ser rápido y manejar proyectos de cualquier tamaño con eficiencia.</li>
-</ul>
-
+### Características Principales:
+- **Control de versiones:** Guarda distintas versiones del código, facilitando la comparación y restauración de versiones anteriores.
+- **Colaboración:** Permite que múltiples desarrolladores trabajen simultáneamente en el mismo proyecto sin conflictos, gracias al uso de ramas.
+- **Sistema distribuido:** Cada copia del repositorio contiene todo el historial del proyecto, permitiendo trabajar sin conexión y mejorando la redundancia.
+- **Eficiencia:** Diseñado para ser rápido y manejar proyectos de cualquier tamaño con alta eficiencia.
 <p>En resumen, Git es una herramienta esencial para el desarrollo moderno de software, proporcionando un entorno robusto para la gestión de cambios y la colaboración en proyectos de código fuente.</p>
 
-> [!IMPORTANT]
-Si no tienes Git instalado, por favor descárgalo e instálalo desde [Git](https://git-scm.com/) antes de seguir los pasos a continuación.
+> [!NOTE]
+> Si aún no tienes Git instalado, puedes descargarlo desde la [página oficial de Git](https://git-scm.com/).
 
-## Comandos esenciales en Git
+## Comandos Esenciales en Git
 
-### Inicializar Git en nuestro Proyecto:
-
-##### Inicializamos git en la ruta donde queremos el gestor de versiones:
+### Inicializar Git en Nuestro Proyecto:
+Para comenzar a utilizar Git en un proyecto existente, abre tu terminal en la carpeta del proyecto y ejecuta:
 ```bash
 git init
 ```
 
 ## Zona de trabajo:
-##### Añadimos los archivo/s que queremos sincronizar con git:
+Añadir archivos al área de preparación (staging area):
+Agrega un archivo específico:
 ```bash
-git add
+git add nombre_del_archivo
+```
+O agrega todos los cambios realizados:
+```bash
 git add . 
 ```
 
-##### Escribimos un mensaje cuando dentro del commit:
+Realizar un commit con un mensaje descriptivo:
+Guarda los cambios en el historial con un mensaje que describa lo que hiciste:
 ```bash
-git commit -m "Escribir mensaje" 
+git commit -m "Mensaje descriptivo de los cambios" 
 ```
 
 ## Verificar Estado de los Ficheros:
-
-##### Información de estado de los archivos
+Mostrar el estado de los archivos:
+Te indica qué archivos han sido modificados, añadidos o eliminados:
 ```bash
 git status
 ```
 
-##### Muestra el historial de commits en un repositorio
+Ver el historial de commits:
+Lista los commits realizados en el repositorio:
 ```bash
 git log
 ```
 
-##### Elige una foto de los commit realizados
+Cambiar entre commits (checkout):
+Puedes navegar a un commit específico usando su ID:
 ```bash
-git checkout id_commit
+git checkout id_del_commit
 ```
 
 
 ## Otros comandos:
-
-##### Elige una rama, la predeterminada “main”
+Cambiar de rama:
+Para cambiar a la rama principal (por defecto "main"):
 ```bash
 git switch main
 ```
 
-##### Desde el local sube al remoto
+Subir cambios al repositorio remoto:
+Envía tus commits locales al repositorio remoto (asegúrate de tenerlo configurado):
 ```bash
 git push
 ```
 
-##### Desde el remoto baja al local, para actualizar ficheros
+Actualizar tu repositorio local con cambios remotos:
+Descarga y fusiona cambios del repositorio remoto:
 ```bash
 git pull
 ```
 
-##### Para añadir etiqueta a un commit
+Añadir etiqueta a un commit:
+Asigna una etiqueta a un commit específico para marcar versiones:
 ```bash
-git tag "text" “id_commit”
+git tag -a "v1.0" id_del_commit -m "Versión 1.0"
 ```
 
-##### Restaura fichero antes del staged
+Restaurar cambios en archivos antes del commit:
+Para descartar cambios en archivos específicos:
 ```bash
-git restore . | nombre_fichero
+git restore nombre_del_archivo
 ```
 
-##### Saca del staged el fichero
+Sacar archivos del área de preparación:
+Si agregaste un archivo por error al staging area:
 ```bash
-git restore --staged .\readme.md
+git restore --staged nombre_del_archivo
 ```
 
-##### Para poder comparar commits con Git
+Comparar diferencias entre commits:
+Muestra los cambios entre dos commits:
 ```bash
-git diff id_commit id_commit
+git diff id_commit1 id_commit2
 ```
 
-##### Configura VSCode para poder comparar commits dentro del editor
+Configurar VSCode como herramienta de diff:
+Establece Visual Studio Code como tu herramienta de comparación por defecto:
 ```bash
-git config --global diff.tool vscode 
+git config --global diff.tool vscode
 ```
 
-##### Para comprar los cambios de un commit u otro, y ver los cambios
+Usar la herramienta de diff para comparar cambios:
+Abre VSCode para visualizar las diferencias:
 ```bash
-git difftool id_commit id_commit
+git difftool id_commit1 id_commit2
 ```
