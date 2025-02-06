@@ -1,7 +1,9 @@
 ## Tabla de Contenidos
-- [¿Qué es Git y para qué sirve?](#que-es-git)
-- [Uso](#uso)
-- [Licencia](#licencia)
+- [¿Qué es Git y para qué sirve?](#que-es-git-y-para-que-sirve)
+- [Comandos esenciales en Git](#comandos-esenciales-en-git)
+- [Zona de trabajo](#zona-de-trabajo)
+- [Verificar Estado de los Ficheros](#estado-de-ficheros)
+- [Otros comandos](#otros-comandos)
 
 # ¿Qué es Git y para qué sirve?
 <p>Git es un sistema de control de versiones distribuido que permite a los desarrolladores rastrear y gestionar cambios en el código fuente a lo largo del tiempo. Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.</p>
