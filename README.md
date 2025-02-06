@@ -22,13 +22,13 @@ git init
 ```
 
 ## Zona de trabajo:
-##### Añadimos los archivo/s que queremos sincronizar con git
+##### Añadimos los archivo/s que queremos sincronizar con git:
 ```bash
 git add
 git add . 
 ```
 
-##### Commit con un mensaje con “”
+##### Escribimos un mensaje cuando hagamos el commit:
 ```bash
 git commit -m "Escribir mensaje" 
 ```
