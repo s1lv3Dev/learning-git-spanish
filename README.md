@@ -15,7 +15,8 @@
 ## Comandos esenciales en Git
 
 ### Inicializar Git en nuestro Proyecto:
+
+##### Inicializamos git donde queremos el gestor de versiones:
 ```bash
 git init
 ```
-###### (Inicializamos git donde queremos el gestor de versiones)
