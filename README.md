@@ -2,7 +2,7 @@
 - [¿Qué es Git y para qué sirve?](#que-es-git-y-para-que-sirve)
 - [Comandos esenciales en Git](#comandos-esenciales-en-git)
 - [Zona de trabajo](#zona-de-trabajo)
-- [Verificar Estado de los Ficheros](#estado-de-ficheros)
+- [Verificar Estado de los Ficheros](#verificar-estado-de-los-ficheros)
 - [Otros comandos](#otros-comandos)
 
 # ¿Qué es Git y para qué sirve?
