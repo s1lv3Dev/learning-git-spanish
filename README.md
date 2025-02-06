@@ -11,10 +11,10 @@
 
 <p>En resumen, Git es una herramienta esencial para el desarrollo moderno de software, proporcionando un entorno robusto para la gestión de cambios y la colaboración en proyectos de código fuente.</p>
 
-
+<br>
 > [!NOTE]
 Si no tienes Git instalado, por favor descárgalo e instálalo desde [Git](https://git-scm.com/) antes de seguir los pasos a continuación.
-
+<br>
 
 ## Comandos esenciales en Git
 
