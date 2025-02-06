@@ -16,7 +16,19 @@
 
 ### Inicializar Git en nuestro Proyecto:
 
-##### Inicializamos git donde queremos el gestor de versiones:
+##### Inicializamos git en la ruta donde queremos el gestor de versiones:
 ```bash
 git init
+```
+
+## Zona de trabajo:
+##### Añadimos los archivo/s que queremos sincronizar con git
+```bash
+git add
+git add . 
+```
+
+##### Commit con un mensaje con “”
+```bash
+git commit -m "Escribir mensaje" 
 ```
