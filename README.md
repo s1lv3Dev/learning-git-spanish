@@ -68,7 +68,7 @@ git checkout id_del_commit
 ```
 
 
-## Otros comandos:
+## Otros comandos Útiles:
 Cambiar de rama:
 Para cambiar a la rama principal (por defecto "main"):
 ```bash
@@ -122,3 +122,18 @@ Abre VSCode para visualizar las diferencias:
 ```bash
 git difftool id_commit1 id_commit2
 ```
+
+
+## Recursos Adicionales
+- [Documentación Oficial de Git](https://git-scm.com/doc?form=MG0AV3)
+- [Pro Git Book (Español)](https://git-scm.com/book/es/v2?form=MG0AV3)
+
+
+## Créditos
+
+Este proyecto fue desarrollado por [s1lv3Dev](https://github.com/s1lv3Dev) con la ayuda de Microsoft Copilot.
+
+---
+
+> [!NOTE] 
+> ¡Gracias por usar esta guía para aprender Git!
