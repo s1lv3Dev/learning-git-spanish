@@ -28,7 +28,72 @@ git add
 git add . 
 ```
 
-##### Escribimos un mensaje cuando hagamos el commit:
+##### Escribimos un mensaje cuando dentro del commit:
 ```bash
 git commit -m "Escribir mensaje" 
+```
+
+## Verificar Estado de los Ficheros:
+
+##### Información de estado de los archivos
+```bash
+git status
+```
+
+##### Muestra el historial de commits en un repositorio
+```bash
+git log
+```
+
+##### Elige una foto de los commit realizados
+```bash
+git checkout id_commit
+```
+
+
+## Otros comandos:
+
+##### Elige una rama, la predeterminada “main”
+```bash
+git switch main
+```
+
+##### Desde el local sube al remoto
+```bash
+git push
+```
+
+##### Desde el remoto baja al local, para actualizar ficheros
+```bash
+git pull
+```
+
+##### Para añadir etiqueta a un commit
+```bash
+git tag "text" “id_commit”
+```
+
+##### Restaura fichero antes del staged
+```bash
+git restore . | nombre_fichero
+```
+
+##### Saca del staged el fichero
+```bash
+git restore --staged .\readme.md
+```
+
+##### Para poder comparar commits con Git
+```bash
+git diff id_commit id_commit
+```
+
+##### Configura VSCode para poder comparar commits dentro del editor
+```bash
+git config --global diff.tool vscode 
+```
+
+##### Para comprar los cambios de un commit u otro, y ver los cambios
+```bash
+git difftool id_commit id_commit
 ```
