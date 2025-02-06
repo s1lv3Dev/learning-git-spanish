@@ -1,9 +1,14 @@
+# Aprendiendo lo Básico de Git
+
 ## Tabla de Contenidos
-- [¿Qué es Git y para qué sirve?](#que-es-git-y-para-que-sirve)
-- [Comandos esenciales en Git](#comandos-esenciales-en-git)
-- [Zona de trabajo](#zona-de-trabajo)
-- [Verificar Estado de los Ficheros](#verificar-estado-de-los-ficheros)
-- [Otros comandos](#otros-comandos)
+- [¿Qué es Git y para qué sirve?](#qué-es-git-y-para-qué-sirve)
+  - [Características Principales](#características-principales
+- [Comandos Esenciales en Git](#comandos-esenciales-en-git)
+  - [Inicializar Git en Nuestro Proyecto](#inicializar-git-en-nuestro-proyecto)
+  - [Zona de Trabajo](#zona-de-trabajo)
+  - [Verificar Estado de los Ficheros](#verificar-estado-de-los-ficheros)
+- [Otros Comandos Útiles](#otros-comandos-útiles)
+- [Recursos Adicionales](#recursos-adicionales)
 
 # ¿Qué es Git y para qué sirve?
 <p>Git es un sistema de control de versiones distribuido que permite a los desarrolladores rastrear y gestionar cambios en el código fuente a lo largo del tiempo. Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.</p>
