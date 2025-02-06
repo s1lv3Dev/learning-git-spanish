@@ -14,7 +14,7 @@
 <br>
 > [!NOTE]
 Si no tienes Git instalado, por favor descárgalo e instálalo desde [Git](https://git-scm.com/) antes de seguir los pasos a continuación.
-<br>
+
 
 ## Comandos esenciales en Git
 
